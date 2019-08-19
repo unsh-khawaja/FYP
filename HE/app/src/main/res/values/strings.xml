@@ -109,4 +109,6 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="tab_text_1">Home</string>
     <string name="tab_text_2">Speak</string>
+    <string name="voice_search">Voice Search</string>
+    <string name="help">help</string>
 </resources>
