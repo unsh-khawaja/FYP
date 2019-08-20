@@ -111,4 +111,6 @@
     <string name="tab_text_2">Speak</string>
     <string name="voice_search">Voice Search</string>
     <string name="help">help</string>
+    <string name="mail_about">For further Information, you can contact us on the following emails: unsaaslam2gmail.com janathoor@gmail.com</string>
+    <string name="about_detail"><![CDATA[This system provides an Android app for users. The main target of this project are people who are either blind or have low vision. One of the main targets are socialtes, businessmen & politicians to help them ease and provide the facility to control their phone via voice.]]></string>
 </resources>

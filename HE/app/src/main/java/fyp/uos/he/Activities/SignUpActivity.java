@@ -43,6 +43,7 @@ public class SignUpActivity extends AppCompatActivity {
     FirebaseAuth auth;
     UserModel model;
     DatabaseReference reference;
+    public final static String NAME = "name";
 
     private StorageReference mProfilePicStorageReference;
     private static final int RC_PHOTO_PICKER = 1;
