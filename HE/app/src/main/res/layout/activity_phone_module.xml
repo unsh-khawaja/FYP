@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -6,6 +7,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:background="@color/relCo"
         android:padding="15sp">
 
         <TextView
@@ -16,7 +18,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="70dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/text"
+            android:textColor="@color/white"
             android:textSize="20dp" />
 
         <ImageButton
@@ -27,11 +29,11 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="74dp"
             android:adjustViewBounds="false"
-            android:background="@color/background"
+            android:background="@color/white"
             android:backgroundTint="#00ffffff"
             android:cropToPadding="false"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_voice_recorder_microphone" />
+            android:src="@drawable/micnew" />
 
         <Button
             android:id="@+id/buttonHelpPhone"
@@ -44,7 +46,7 @@
             android:fontFamily="sans-serif"
             android:padding="10dp"
             android:text="@string/buttonhelp"
-            android:textColor="@color/text"
+            android:textColor="@color/white"
             android:textSize="24dp"
             android:textStyle="bold" />
 
@@ -56,7 +58,7 @@
             android:layout_centerHorizontal="true"
             android:text="@string/tap_on_mic"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/text"
+            android:textColor="@color/white"
             android:textSize="12sp" />
 
         <TextView
@@ -68,7 +70,7 @@
             android:layout_marginTop="34dp"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="@color/text"
+            android:textColor="@color/white"
             android:textStyle="bold" />
     </RelativeLayout>
 </RelativeLayout>

@@ -3,10 +3,8 @@ package fyp.uos.he.Activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
-import android.app.SearchManager;
 import android.content.ComponentName;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +26,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         mOD=findViewById(R.id.odhexa);
+
         mContact=findViewById(R.id.contacthexa);
         mContact.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,11 +34,7 @@ public class HomeActivity extends AppCompatActivity {
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 dialog.setContentView(R.layout.custom_dialog);
                 dialog.show();
-
-
                 txt =  dialog.findViewById(R.id.textViewMessage);
-
-
                 call =dialog.findViewById(R.id.btn_call);
                 call.setOnClickListener(new View.OnClickListener() {
                     @Override

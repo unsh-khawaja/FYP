@@ -77,7 +77,7 @@ public class Location  extends AppCompatActivity implements OnMapReadyCallback,
         public void onMapReady(GoogleMap googleMap) {
                 mMap = googleMap;
                 // Add a marker in Sydney and move the camera
-                LatLng Sargodha = new LatLng(32.078665, 72.68051999999999);
+                LatLng Sargodha = new LatLng(32.0740, 72.6861);
                 mMap.addMarker(new MarkerOptions().position(Sargodha).title("Marker in Sydney"));
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(32.078665, 72.68051999999999), 15.0f));
                 }

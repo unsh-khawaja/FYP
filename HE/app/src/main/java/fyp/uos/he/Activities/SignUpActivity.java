@@ -97,7 +97,6 @@ public class SignUpActivity extends AppCompatActivity {
                         });
                     }
                 });
-
             }
         });
 
@@ -135,8 +134,9 @@ public class SignUpActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()){
-                                model= new UserModel(mNameStr, mAddressStr, mPhonenumberStr);
-                                reference.push().setValue(model).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                model = new UserModel(FirebaseAuth.getInstance().getUid(),mNameStr,mPhonenumberStr,mAddressStr,downloadUri.toString());
+                               // model= new UserModel(mNameStr, mAddressStr, mPhonenumberStr, mEmailStr, mPasswordStr,downloadUri );
+                                reference.child(FirebaseAuth.getInstance().getUid()).setValue(model).addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
 

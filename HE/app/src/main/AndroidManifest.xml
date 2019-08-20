@@ -36,13 +36,13 @@
         <activity android:name=".Activities.Location"></activity>
         <activity android:name=".Activities.AboutUs" />
         <activity android:name=".Activities.HelpActivity" />
-        <activity android:name=".Activities.MapModule" />
         <activity android:name=".Activities.PhoneModule" />
-        <activity android:name="$Activities.VoiceSearchActivity" />
-        <activity android:name="$Activities.HomeActivity" />
-        <activity android:name="$Activities.SignUpActivity" />
-        <activity android:name="$Activities.LoginActivity" />
-        <activity android:name="$Activities.MainActivity">
+        <activity android:name=".Activities.VoiceSearchActivity" />
+        <activity android:name=".Activities.HomeActivity" />
+        <activity android:name=".Activities.SignUpActivity" />
+        <activity android:name=".Activities.LoginActivity" >
+        </activity>
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

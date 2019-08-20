@@ -1,18 +1,28 @@
 package fyp.uos.he.Models;
 public class UserModel {
+    String uID;
     String Name;
     String Email;
     String Password;
     String Phonenumber;
     String Address;
+    String imgUrl;
 
-    public UserModel(){
-    }
-    public UserModel(String name, String phonenumber, String address){
+
+    public UserModel(String uID,String name, String phonenumber, String address, String imgUrl){
+        this.uID = uID;
         Name= name;
         Phonenumber= phonenumber;
         Address= address;
+        Phonenumber=phonenumber;
+        this.imgUrl = imgUrl;
     }
+
+    public UserModel() {
+    }
+
+
+
     public String getName(){ return Name;}
     public void setName(String name){ this.Name = name;}
     public String getEmail(){return Email;}
@@ -24,4 +34,11 @@ public class UserModel {
     public String getAddress(){ return Address;}
     public void setAddress(String address){this.Address=address;}
 
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
 }

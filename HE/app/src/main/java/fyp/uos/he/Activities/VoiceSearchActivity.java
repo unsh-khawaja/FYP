@@ -108,13 +108,13 @@ public class VoiceSearchActivity extends AppCompatActivity {
                 break;
             case Commands.emergencyModule:
                 Toast.makeText(getBaseContext(), "Emergency Module", Toast.LENGTH_SHORT).show();
-                Intent intente = new Intent(this, MapModule.class);
+                Intent intente = new Intent(this, Location.class);
                 intente.putExtra(Commands.EMERGENCY, true);
                 startActivity(intente);
                 break;
             case Commands.locModule:
                 Toast.makeText(getBaseContext(), "Location Module", Toast.LENGTH_SHORT).show();
-                Intent intentl = new Intent(this, MapModule.class);
+                Intent intentl = new Intent(this, Location.class);
                 startActivity(intentl);
                 break;
             default:
